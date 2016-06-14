@@ -1,0 +1,8 @@
+consul = "CONSUL:8500"
+
+template {
+  source = "/etc/haproxy/haproxy.template"
+  destination = "/etc/haproxy/haproxy.cfg"
+  command = "systemctl reload haproxy"
+
+}

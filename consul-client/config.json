@@ -1,0 +1,15 @@
+{
+    "server": false,
+    "datacenter": "your-dc",
+    "recursors": ["$OUTSIDE_CONSUL_DNS"],
+    "ports": {
+      "dns": 53
+    },
+    "advertise_addr": "$LOCAL_IP",
+    "client_addr": "$LOCAL_IP",
+    "data_dir": "/var/lib/consul",
+    "ui_dir": "/opt/consul/",
+    "log_level": "INFO",
+    "enable_syslog": true,
+    "start_join": ["server1", "server2", "server3"]
+    }
