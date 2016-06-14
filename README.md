@@ -13,6 +13,7 @@ config.json -> /etc/consul.d/client/config.json
 consul-client.service -> /etc/systemd/system/consul-client.service
 
 # Consul Template
+Using this project to load balance my services that get registered in Consul Service Discovery. Consul Template Project URL: https://github.com/hashicorp/consul-template
 
 ## haproxy-example
 consul-haproxy.json -> /etc/consul-template/consul-haproxy.json
