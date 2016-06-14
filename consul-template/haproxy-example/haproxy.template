@@ -16,5 +16,5 @@ listen http-in
   bind *:80
   mode tcp
   option tcplog
-  balance leastconn{{range service "SERVICE"}}
+  balance leastconn{{range service "$SERVICE"}}
   server {{.Node}} {{.Address}}:{{.Port}} check {{end}}
