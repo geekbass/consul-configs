@@ -1,5 +1,6 @@
 # Example Consul Configs for My Consul Cluster
-All of these configs are used for CentOS 7. File mapping below.
+All of these configs are used for CentOS 7. File mapping below. For more information on setting up a Consul Cluster see my blog post here: http://www.wickedawesometech.us/2016/04/setting-up-consul-service-discovery-in.html
+
 
 # Consul Server
 config.json -> /etc/consul.d/server/config.json
